@@ -137,7 +137,7 @@ const GalleryPage:FC = () => {
     </div>
 
     <div className={style.containerWraper}>
-        <Wraper arr={data} length={limit} heigth={410}/>
+        <Wraper arr={data} length={limit} heigth={310}/>
     </div>
     
   </div>

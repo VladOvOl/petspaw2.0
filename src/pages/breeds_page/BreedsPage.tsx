@@ -94,7 +94,7 @@ const BreedsPage:FC = () => {
             </div>
         </div>
 
-        <Wraper arr={dataWraper} length={limit} preloader={preloder} heigth={570}/>
+        <Wraper arr={dataWraper} length={limit} preloader={preloder} heigth={470}/>
         
 
       </div>
