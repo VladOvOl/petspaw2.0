@@ -1,0 +1,143 @@
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.containerNavbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.containerBreeds{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F8F8F7;
+    cursor: pointer;
+
+}
+
+#customMenuBreeds{
+    width: 160px;
+    height: 200px;
+    background-color: #F8F8F7;
+    overflow-y: scroll;
+    padding:0  20px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/***************************************/
+.containerLimit{
+    height: 40px;
+    width: 81px;
+    font-size: 16px;
+    padding: 0 10px;
+    background-color: #F8F8F7;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+#customMenuLimit{
+    width: 41px;
+    font-size: 14px;
+    height: fit-content;
+    background-color: #F8F8F7;
+    padding:0  20px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.LimitShotDown ul{
+    position: absolute;
+    width: 101px;
+    height: fit-content;
+    background-color: #F8F8F7;
+    z-index: 1;
+    bottom: -90px;
+    left: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.LimitShotDown ul li{
+    margin-left: 10px;
+}
+/***************************************/
+
+.input{
+    background-color: aqua;
+    height: 200px;
+}
+
+.BreedsShotDown ul{
+
+    position: absolute;
+    width: 226px;
+    height: 100px;
+    background-color: #F8F8F7;
+    z-index: 1;
+    bottom: -100px;
+    left: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    border-radius: 0 0 10px 10px;
+    overflow-y: scroll;
+}
+
+.BreedsShotDown ul li{
+    margin-left: 10px;
+}
+
+.dpnone{
+    display: none;
+}
+
+.imgPassive{
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 10px;
+}
+.imgActive{
+    position: absolute;
+    right: 10px;
+    transform: rotate(180deg);
+    transition: all 0.4s ease-in-out;
+}
+
+/***************************************/
+
+.containerSortAZ{
+    width: 40px;
+    height: 40px;
+    background-color: #F8F8F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.containerSortZA{
+    width: 40px;
+    height: 40px;
+    background-color: #F8F8F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+

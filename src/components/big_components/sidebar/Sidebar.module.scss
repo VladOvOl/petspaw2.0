@@ -1,0 +1,85 @@
+.container{
+    width: 35%;
+    height: 544px; 
+    margin:30px;
+}
+
+.activeSidebar{
+    overflow-block: scroll;
+}
+
+.containerLogo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+
+    .logo{
+        margin-right: 10px;
+    }
+
+}
+.containerTitle{
+    margin-bottom: 60px;
+
+    .title{
+        color: #1D1D1D;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 58px;
+        margin-bottom: 10px;
+    }
+
+    .underTitle{
+        color: #8C8C8C;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+.containerCardText{
+    .textCard{
+        color: #1D1D1D;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.containerCard{
+    display: flex;
+    justify-content: space-between;
+
+    .containerLink{
+        height: 36px;
+        width: 138px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: #FBE0DC;
+        
+            .link{
+                color: #FF868E;
+            }
+
+        }
+        .link{
+            background: transparent;
+            border: none;
+            color: #FF868E;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 16px;
+            cursor: pointer;
+        }
+    }
+}
+    
+    
+

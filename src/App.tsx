@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Layout from './layout/Layout';
+import HomePage from './pages/home_page/HomePage';
+import VotingPage from './pages/voting_page/VotingPage';
+import Navbar from './components/big_components/navbar/Navbar';
+import GalleryPage from './pages/gallery_page/GalleryPage';
+import BreedsPage from './pages/breeds_page/BreedsPage';
+import LikePage from './pages/like_page/LikePage';
+import DislikePage from './pages/dislike_page/DislikePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Routes>
+        <Route path='/' element={<Layout/>}>
+            <Route index element={<HomePage/>}/>
+            <Route path='/page/*' element={<Navbar/>}>
+              <Route path='gallery' element={<GalleryPage/>}/>
+              <Route path='voting' element={<VotingPage/>}/>
+              <Route path='breeds' element={<BreedsPage/>}/>
+              <Route path='likes' element={<LikePage/>}/>
+              <Route path='dislikes' element={<DislikePage/>}/>
+              
+            </Route>
+        </Route>
+    </Routes>
   );
 }
 
